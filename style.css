@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* feito para fazer a schroll*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:rgb(20, 30, 40);
+    height: 100vh;
+}
+
+/* utilizada em todas as section*/
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+header{
+    padding: 40px 4%;
+}
+
+header>.interface{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+header a{
+    color:#fff;
+    text-decoration: none;
+
+}
+header a:hover{
+    color: rgb(135, 221, 241);
+    transition:1s;
+    
+/* estilizando o menu de opções*/
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 25px;
+}
+
+section.inicio-do-site{
+    padding: 40px 4%;
+    
+}
+
+section.inicio-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+/* estilizando o texto do inicio do site*/
+
+.inicio-do-site .textoinicio h1{
+    color:rgb(135, 221, 241);
+    font-size: 43px;
+
+}
+
+.inicio-do-site .textoinicio h3{
+    color:aliceblue;
+    font-size: 25px;
+}
+
+.inicio-do-site .textoinicio p{
+    color: #fff;
+    margin: 0px 0;
+    text-align: justify;
+}
+
+.inicio-do-site .imageminicio img{
+    position:relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* estilizando o efeito flutante da imagem de inicio*/
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }    
+}
+
+/* estilizando a parte sobre mim*/
+
+section.sobremim{
+    padding: 40px 4%;
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(49, 122, 139, 0.245);
+}
+section.sobremim .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobremim .imagsobremim img{
+    border-radius: 30px;
+}
+
+
+.sobremim .textosobremim{
+    color:#fff;
+}
+
+.sobremim .textosobremim h2{
+    color: rgb(135, 221, 241);
+    font-size: 40px;
+    line-break: auto;
+}
+
+.sobremim .textosobremim p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/* estilizando a parte sobre formação academica*/
+
+section.formacaoacademica{
+    padding: 40px 4%;
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(49, 122, 139, 0.245);
+
+}
+section.formacaoacademica .flex{
+    align-items: center;
+    gap: 60px;
+
+}
+.formacaoacademica .textoformacaoacademica{
+    color: #fff;
+}
+.formacaoacademica .textoformacaoacademica h2{
+    color: rgb(135, 221, 241);
+    margin: 40px 0;
+    font-size: 40px;
+    line-break: auto;
+}
+.formacaoacademica .textoformacaoacademica p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.formacaoacademica .imagacademica img{
+    border-radius: 300px;
+}
+
+/* estilizando a parte do portifolio*/
+
+section.meuportfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgba(49, 122, 139, 0.245);
+}
+
+section.meuportfolio .flex{
+    justify-content:space-around;
+}
+
+.meuportfolio a img{
+    width: 360px;
+    height: 460px;
+    background-color:rgba(49, 122, 139, 0.245) ;
+    border-radius: 30px;
+}
+
+.meuportfolio h2{
+    color: rgb(135, 221, 241);
+    font-size: 40px;
+    margin: 40px;
+    text-align: center;
+}
+
+/* estilizando a parte do formulario de contato*/
+
+section.formulario{
+    padding: 80px 4%;
+    
+}
+.formulario h2{
+    color: rgb(135, 221, 241);
+    font-size: 40px;
+    margin: 40px;
+    text-align: center;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+form input::placeholder{
+    color: rgb(135, 221, 241);
+}
+form textarea::placeholder{
+    color: rgb(135, 221, 241);
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .butonenviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .butonenviar input{
+    width: 120px;
+    background-color:rgb(135, 221, 241);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* estilizando a parte do rodapé da pagina*/
+
+footer{
+    padding: 10px 4%;
+    box-shadow: 0 0 40px 10px rgba(49, 122, 139, 0.245);
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .email p{
+    padding-top: 65px;
+}
+
+footer .email p a {
+    color: rgb(135, 221, 241);
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+
+.linhadofooter p{
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
