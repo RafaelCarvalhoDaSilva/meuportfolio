@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio</title>
+</head>
+<body>
+    <header> <!--HEADER criado para fazer o cabeçalho como imagem do logo e menu de opções-->
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="imag/logo.png" width="200" height="200" alt="logo do inicio">
+                </a>
+            </div>
+
+            <nav class="Menu">
+                <ul>
+                    <li>
+                        <a href="#Sobremim">Sobre mim</a>
+                    </li>
+                    <li>
+                        <a href="#formacaoacademica">Formação Academica</a>
+                    </li>
+                    <li>
+                        <a href="#meuportfolio">Portfólio</a>
+                    </li>
+                    <li>
+                        <a href="#Contato">Contato</a>
+                    </li>
+                </ul>
+
+            </nav>
+
+        </div>
+    </header>
+    <main> <!--decidir separar o meu portfolio em section para facilitar a visualização-->
+        <section class="inicio-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="textoinicio">
+                        <br>
+                        <h3>Ola, meu nome é...</h3>
+                        <h1>RAFAEL CARVALHO DA SILVA</h1>
+                        <P>Bem-vindo(a) ao meu portfólio de programação, onde cada linha de código conta uma história de inovação e criatividade. Explore comigo este universo digital e descubra como juntos podemos construir soluções que transformam o mundo. </P>
+
+                    </div>
+                    <div class="imageminicio">
+                        <img src="imag/fotoinicio.png" width="520" height="520" alt="foto do inicio">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section><br><br>
+<!--criado um id para colocar na tach a de link para fazer o scroll, adicionei em todas as section do menu de opções-->
+        <section id="Sobremim" class="sobremim">
+            <div class="interface">
+                <div class="flex">
+                    <div class="imagsobremim">
+                        <img src="imag/fotosobre.png" alt="imagem sobre mim">
+                    </div>
+                    <div class="textosobremim">
+                        <h2>Sobre Mim</h2><br>
+                        <P>Sou apaixonado por tecnologia e programação. Desde cedo, descobri minha paixão por criar sistemas e desenvolver soluções inovadoras. A cada linha de código, sinto-me mais inspirado e motivado a enfrentar novos desafios.</P>
+                        <p>Além do mundo da tecnologia, tenho uma grande apreciação pelo universo dos esportes. Assistir a competições e torneios é uma das minhas formas favoritas de relaxar e me manter inspirado. Nas horas vagas, também me aventuro em corridas e pedaladas de bicicleta, buscando sempre superar meus próprios limites e manter um estilo de vida saudável.</p>
+                        <p>Adoro aproveitar meu tempo livre assistindo a filmes de comédia. Não há nada como uma boa risada para iluminar o dia. E quando se trata de música, sou eclético: desde clássicos atemporais até os hits mais recentes, estou sempre aberto a novos sons e artistas.</p>
+                        <p>Viajar é outra paixão que alimenta minha alma. Explorar novas culturas e mergulhar em tradições locais são experiências que enriquecem minha vida de maneiras inimagináveis.</p>
+                        <p>Em resumo, sou um entusiasta da vida, sempre em busca de novos conhecimentos, desafios e experiências. Estou constantemente expandindo meus horizontes, tanto no mundo da tecnologia quanto no meu cotidiano, e estou animado para ver onde essas jornadas me levarão a seguir.</p>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+        <section id="formacaoacademica" class="formacaoacademica">
+            <div class="interface">
+                <div class="flex">
+                    <div class="textoformacaoacademica">
+                        <h2>Formação Academica</h2>
+                        <p>Estou atualmente cursando Análise e Desenvolvimento de Sistemas, com foco em adquirir conhecimentos sólidos em programação, desenvolvimento de software e análise de sistemas. Durante meu curso, tenho explorado diversas tecnologias e metodologias, visando me preparar para os desafios do mercado de tecnologia da informação.</p>
+                        <p>Além da minha formação em Análise e Desenvolvimento de Sistemas, também busco desenvolver minhas habilidades em idiomas estrangeiros. Atualmente, tenho fluência em francês, adquirida por meio imersão cultural. Além disso, estou em constante aprimoramento do meu inglês, buscando consolidar minha capacidade de comunicação nesse idioma.</p>
+                    </div>
+                    <div class="imagacademica">
+                        <img src="imag/formaçãoacademica.jpg" alt="imagem de formacaoademica">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="meuportfolio" class="meuportfolio">
+            <div class="interface">
+                <h2>Portfólio</h2>
+                <div class="flex">
+                    <a href="https://rafaelcarvalhodasilva.github.io/escudariaferrari/"><img src="imag/site11.png" width="180px" alt=""></a>
+                    <a href="https://rafaelcarvalhodasilva.github.io/ayrtonsenna/index.html"><img src="imag/site12.png" width="180px" alt=""></a>
+                    <a href="https://rafaelcarvalhodasilva.github.io/leonardodavinc/index.html"><img src="imag/site13.png" width="180px" alt=""></a>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!--section do formulario-->
+        <section id="Contato" class="formulario">
+            <div class="interface">
+                <h2>Contato</h2>
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Nome Completo" required>
+                    <input type="text" name="" id="" placeholder="E-mail" required>
+                    <textarea name="" id="" placeholder="Escreva sua mensagem" required></textarea>
+                    <div class="butonenviar"><input type="submit" value="ENVIAR"></div>
+
+                </form>
+            </div>
+
+        </section>
+        <footer>
+            <div class="interface">
+                <div class="linhadofooter">
+                    <div class="flex">
+                        <div class="logofooter">
+                            <img src="imag/logo.png" width="200" height="200" alt="">
+                        </div>
+                        <div class="email">
+                            <p><a href="mailto:rafaelcarvalhosilva7@gmail.com">E-mail: rafaelcarvalhosilva7@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="linhadofooter">
+                    <p>Todos os direitos reservados 2024</p>
+
+                </div>
+            </div>
+        </footer>
+
+        
+    </main>
+</body>
+</html>
